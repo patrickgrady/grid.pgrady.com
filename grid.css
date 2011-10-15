@@ -1,0 +1,153 @@
+/*/////////////////////////////////// pgrady responsive framework /////////////////////////////*/
+
+/*///////////////////////////////////////// css reset /////////////////////////////////////////*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	}
+
+body {
+	line-height: 1.5em;
+	color: #222;
+	background: #fff;
+	}
+	
+ol, ul {
+	list-style: none;
+	}
+
+blockquote, q {
+	quotes: none;
+	}
+	
+	
+/*//////////////////////////////////////// global styles ////////////////////////////////////////*/
+
+html, body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #bbb;
+	height: 100%;
+	}
+
+#page {
+	width: 86%; /*width about 1008px*/
+	margin: 0 auto;
+	min-height: 100%;
+	}
+
+.wrapper {
+	background: #fff;
+	margin: 0 auto;
+	padding: .5em;
+	}
+
+.wrapper p {
+	font-size: 1em;
+	padding: .5em;
+	background: #ddd;
+	font-weight: bold;
+	}
+	
+.footer {
+	clear: both;
+	}
+
+/*//////////////////////////////////////// sets column widths ////////////////////////////////////////*/
+
+/*////////////////////////// total initial width of all 12 columns=984px /////////////////////////////*/
+
+div[class$="col"] {
+	padding: .5em;
+    float: left;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    }
+
+.onecol {
+	width: 100%;
+	}
+
+.twocol {
+	width: 50%;
+	}
+
+.threecol {
+	width: 33.33%;
+	}
+	
+.fourcol {
+	width: 25%;
+	}
+
+.sixcol {
+	width: 16.67%;
+	}
+
+.eightcol {
+	width: 12.5%;
+	}
+
+	
+/*////////////////////////////////////// widescreen layout //////////////////////////////////////*/
+
+@media (min-width:801px) {
+
+#page {
+	max-width: 1120px;
+	}
+
+div[class$="col"] {
+	padding: .5em;
+	}
+	
+	}/*widescreen close*/
+	
+/*//////////////////////////////////////// tablet layout ////////////////////////////////////////*/
+
+@media (max-width:800px) {
+
+body	 {
+	min-width: 481px;
+	}
+
+div[class$="col"] {
+	padding: .5em;
+	}
+	
+.sixcol, .eightcol {
+	width: 50%;
+	}
+
+	}/*tablet close*/
+	
+/*//////////////////////////////////////// mobile layout ////////////////////////////////////////*/
+
+@media (max-width: 480px) {
+
+body {
+	min-width: 300px;
+	}
+
+div[class$="col"] {
+	width: 100%;
+	padding: .5em;
+	}
+	
+	}/*mobile close*/

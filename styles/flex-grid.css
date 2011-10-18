@@ -1,0 +1,109 @@
+/*////////////////////////////////////// The Flexible Grid Foundation //////////////////////////////*/
+
+/*                                                                By Patrick Grady                                                          */
+/*                                                               www.pgrady.com                                                          */
+	
+/*/////////////////////////////////////////// global styles /////////////////////////////////////////*/
+
+html, body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	}
+
+#container {
+	width: 99.99999%; /*width about 1008px*/
+	margin: 0 auto;
+	}
+
+.wrapper {
+	margin: 0 auto;
+	padding: .5em;
+	}
+	
+
+/*//////////////////////////////////////// sets column widths ////////////////////////////////////////*/
+
+/*////////////////////////// total initial width of all 12 columns=984px /////////////////////////////*/
+
+div[class$="col"] {
+	padding: 1em;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    }
+
+.onecol {
+	width: 100%;
+	}
+
+.twocol {
+	width: 50%;
+	}
+
+.threecol {
+	width: 33.33%;
+	}
+	
+.fourcol {
+	width: 25%;
+	}
+
+.sixcol {
+	width: 16.66%;
+	}
+
+.eightcol {
+	width: 12.5%;
+	}
+
+		
+/*////////////////////////////////////// widescreen layout //////////////////////////////////////*/
+
+@media (min-width:801px) {
+	
+#container {
+	max-width: 1120px;
+	}
+			
+	}/*widescreen close*/
+	
+/*//////////////////////////////////////// tablet layout ////////////////////////////////////////*/
+
+@media (max-width:800px) {
+
+body {
+	min-width: 660px;
+	}
+
+#container  {
+	width: 100%;
+	}
+	
+.fourcol, .sixcol, .eightcol {
+	width: 50%;
+	}
+		
+
+	}/*tablet close*/
+	
+/*//////////////////////////////////////// mobile layout ////////////////////////////////////////*/
+
+@media (max-width: 659px) {
+
+body {
+	min-width: 300px;
+	}
+	
+#container  {
+	width: 100%;
+	}
+
+div[class$="col"] {
+	width: 100%;
+	}
+		
+	}/*mobile close*/

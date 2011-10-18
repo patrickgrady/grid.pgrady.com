@@ -1,8 +1,12 @@
-What is the pgrady framework?
+10.17.2011
 
-It's a lightweight and flexible foundation to build a website on. It does all the heavy lifting by supplying a css grid that is totally flexible and responsive. Just layer it in your stylesheets and build on top, then call the appropriate classes in your markup. That's it!
 
-Thanks
+What is The Flexible Grid Foundation, You Ask?
+
+It's a transparent responsive grid system built by a designer, for designers. Easy to implement and easy to modify, it's a great way to add the "one-web" approach to your own site. It does all the heavy-lifting in the background with a versitile 12-column css grid that is totally flexible and responsive. Just layer it in your stylesheets and build on top, then call the appropriate classes in your markup. That's pretty much it! Check out the demo to see it in action. Thanks.
+
+
+Designed by,
 
 Patrick Grady
-www.pgrady.com/grid
+www.grid.pgrady.com

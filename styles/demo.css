@@ -1,0 +1,9 @@
+/*
+
+The Flexible Grid Foundation Demo
+By Patrick Grady                                                             
+www.pgrady.com   
+
+*/
+
+html, body {	background: #bbb; font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; height: 100%; } .wrapper { background: #fff; } .footer { clear: both; } div[class$="col"] p { background: #ddd; margin: 0; } .wrapper p { font-size: 1em; padding: .5em; background: #ddd; font-weight: bold; } #resize { background: rgba(250, 200, 5, 0.75); position: fixed; bottom: 0; right: 0; padding: 0 1em; font-size: .75em; font-weight: bold; } #title { background: url(../imgs/pg_logo_sm.png) no-repeat; text-indent: 40px; margin-bottom: 1.5em; } #summary { background: transparent; font-weight: normal; padding: 0 0 1.5em 0; } a { font-size: .75em; font-weight: 600; text-decoration: none; color: #333;	text-decoration: none; border-bottom: #fac805 solid 2px; -webkit-transition: all .25s ease-out; -moz-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; } a:after { content: "\2192"; } a:hover { background: #fac805; } 

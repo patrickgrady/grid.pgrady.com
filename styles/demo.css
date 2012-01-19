@@ -1,9 +1,74 @@
 /*
 
-The Flexible Grid Foundation Demo
+The pgrady Grid Demo
 By Patrick Grady                                                             
 www.pgrady.com   
 
 */
 
-html, body {	background: #bbb; font-family: proxima-nova; -webkit-font-smoothing: antialiased; height: 100%; } .wrapper { background: #fff; } .footer { clear: both; } div[class$="col"] p { background: #ddd; margin: 0; } .wrapper p { font-size: 1em; padding: .5em; background: #ddd; font-weight: bold; } #resize { background: rgba(250, 200, 5, 0.75); position: fixed; bottom: 0; right: 0; padding: 0 1em; font-size: .75em; font-weight: bold; } #title { background: url(../imgs/pg_logo_sm.png) no-repeat; text-indent: 40px; margin-bottom: 1.5em; } #summary { background: transparent; font-weight: normal; padding: 0 0 1.5em 0; } a { font-size: .75em; font-weight: 600; text-decoration: none; color: #333;	text-decoration: none; border-bottom: #fac805 solid 2px; -webkit-transition: all .25s ease-out; -moz-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; } a:after { content: "\2192"; } a:hover { background: #fac805; } 
+html, body {	background: #bbb; font-family: proxima-nova; -webkit-font-smoothing: antialiased; height: 100%; } .wrapper { background: #fff; } .footer { clear: both; } div[class^="span"] p { background: #ddd; margin: 0; } .wrapper p { font-size: 1em; padding: .5em; background: #ddd; font-weight: bold; } #resize { background: rgba(250, 200, 5, 0.75); position: fixed; bottom: 0; right: 0; padding: 0 1em; font-size: .75em; font-weight: bold; } #title { background: url(../imgs/pg_logo_sm.png) no-repeat; text-indent: 40px; margin-bottom: 1.5em; } #summary { background: transparent; font-weight: normal; padding: 0 0 1.5em 0; } a { font-size: .75em; font-weight: 600; text-decoration: none; color: #333; text-decoration: none; border-bottom: #fac905 solid 2px; -webkit-transition: all .25s ease-out; -moz-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; } a:hover { background: #fac905; } 
+
+
+.triangle {
+  border-color: transparent transparent transparent rgba(250, 200, 5, 0.75);
+  border-style: solid;
+  border-width: 75px;
+  width:0;
+  height:0;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  position: fixed; 
+  bottom: -75px; 
+  right: -75px;
+}
+
+.triangle p {
+  font-size: .75em; 
+  line-height: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: center;
+  color: white;
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+  position: relative; 
+  bottom: -4px; 
+  right: 48px;
+  }
+
+@-webkit-keyframes pulse {
+	0% {background-color: hsl(48, 96%, 50%);}
+	50% {background: hsl(48, 96%, 28%);}
+	100% {background-color: hsl(48, 96%, 50%);}
+	}
+	  
+.site-link a:link,
+.site-link a:visited {
+	cursor: pointer;
+	font-size: .75em;
+	font-weight: 600;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	border: none;
+	background-color: hsl(48, 96%, 50%);
+	padding: .75em 1em;
+	-webkit-transition: all .25s ease-out;
+	-moz-transition: all .25s ease-out;
+	-o-transition: all .25s ease-out;
+	transition: all .25s ease-out;
+	}
+
+.site-link a:link:hover {
+	-webkit-animation: pulse 2.25s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	background: hsl(48, 96%, 28%);
+	}

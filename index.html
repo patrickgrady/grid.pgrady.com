@@ -1,82 +1,106 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 <html>
-
 <head>
 <meta http-equiv="content-type" content="text/ html;charset=utf-8" />
 <link media="screen" href="styles/reset.css" rel="stylesheet" type="text/css" />
 <link media="screen" href="styles/flex-grid.css" rel="stylesheet" type="text/css" />
 <link media="screen" href="styles/demo.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />  
-<title>The Flexible Grid Foundation</title>
+<title>The pgrady Grid</title>
 <script type="text/javascript" src="http://use.typekit.com/tye1hdi.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
-	<div id="container">
+	<div class="container">
 
 		<div class="wrapper">
-		<div class="onecol">
-			<p id="title">The Flexible Grid Foundation</p>
-			<p id="summary">What is The Flexible Grid Foundation, you ask? It's a transparent responsive grid system built by a designer, for designers. Easy to implement and easy to modify, it's a great way to add the "one-web" approach to your site. It does all the heavy-lifting in the background with a versitile 12-column css grid that is totally flexible and responsive. Just layer in your own stylesheets on top and call the appropriate column classes in your markup &#8212; that's pretty much it! Check out the demo below to see it in action. Thanks.</p>
-			<a href="https://github.com/patrickgrady/grid.pgrady.com" target="_blank">Available on GitHub</a>
+		<div class="span12">
+			<p id="title">The pgrady grid</p>
+			<p id="summary">The pgrady grid is a lightweight responsive grid system built by a designer, for designers.  It's quick to grok, implement and modify &mdash; just layer in your own stylesheets on top and call the appropriate column classes in your markup and that's pretty much it! it's a great way to add the "one-web" approach to your site without having to start from scratch. It does all the heavy-lifting in the background with a fully responsive 12-column fluid-width CSS grid. Default behavior effectively doubles the width of the smallest columns at each media query until everything becomes 100% at the mobile size. Check out the demo below to see it in action and thanks for your interest.</p>
+			<span class="site-link"><a href="https://github.com/patrickgrady/grid.pgrady.com" target="_blank">Fork it on GitHub</a></span>
 		</div>
 		</div><!--wrapper div close-->
 		
 		<div class="wrapper">
-		<div class="onecol"><p>1</p></div>
+		<div class="span12"><p>12</p></div>
 		</div><!--wrapper div close-->
 
 		<div class="wrapper">
-		<div class="twocol"><p>1</p></div>
-		<div class="twocol"><p>2</p></div>
+		<div class="span6"><p>6</p></div>
+		<div class="span6"><p>6</p></div>
 		</div><!--wrapper div close-->
 
 		<div class="wrapper">
-		<div class="fourcol"><p>1</p></div>
-		<div class="fourcol"><p>2</p></div>
-		<div class="fourcol"><p>3</p></div>
-		<div class="fourcol"><p>4</p></div>
-		</div><!--wrapper div close-->
-
-		<div class="wrapper">
-		<div class="eightcol"><p>1</p></div>
-		<div class="eightcol"><p>2</p></div>
-		<div class="eightcol"><p>3</p></div>
-		<div class="eightcol"><p>4</p></div>
-		<div class="eightcol"><p>5</p></div>
-		<div class="eightcol"><p>6</p></div>
-		<div class="eightcol"><p>7</p></div>
-		<div class="eightcol"><p>8</p></div>
+		<div class="span9"><p>9</p></div>
+		<div class="span3"><p>3</p></div>
 		</div><!--wrapper div close-->
 		
 		<div class="wrapper">
-		<div class="onecol"><p>1</p></div>
+		<div class="span3"><p>3</p></div>
+		<div class="span3"><p>3</p></div>
+		<div class="span3"><p>3</p></div>
+		<div class="span3"><p>3</p></div>
 		</div><!--wrapper div close-->
 
 		<div class="wrapper">
-		<div class="threecol"><p>1</p></div>
-		<div class="threecol"><p>2</p></div>
-		<div class="threecol"><p>3</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
 		</div><!--wrapper div close-->
 
 		<div class="wrapper">
-		<div class="sixcol"><p>1</p></div>
-		<div class="sixcol"><p>2</p></div>
-		<div class="sixcol"><p>3</p></div>
-		<div class="sixcol"><p>4</p></div>
-		<div class="sixcol"><p>5</p></div>
-		<div class="sixcol"><p>6</p></div>
+		<div class="span12"><p>12</p></div>
+		</div><!--wrapper div close-->
+		
+		<div class="wrapper">
+		<div class="span4"><p>4</p></div>
+		<div class="span4"><p>4</p></div>
+		<div class="span4"><p>4</p></div>
+		</div><!--wrapper div close-->
+		
+		<div class="wrapper">
+		<div class="span8"><p>8</p></div>
+		<div class="span4"><p>4</p></div>
 		</div><!--wrapper div close-->
 
 		<div class="wrapper">
-		<div class="onecol"><p>1</p></div>
+		<div class="span2"><p>2</p></div>
+		<div class="span2"><p>2</p></div>
+		<div class="span2"><p>2</p></div>
+		<div class="span2"><p>2</p></div>
+		<div class="span2"><p>2</p></div>
+		<div class="span2"><p>2</p></div>
+		</div><!--wrapper div close-->
+		
+		<div class="wrapper">
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
+		<div class="span1"><p>1</p></div>
 		</div><!--wrapper div close-->
 		
 		<div class="wrapper">
 		<div class="footer"></div>
 		</div><!--wrapper div close-->
-		<div id="resize"><p>Resize browser</p></div>
+		<div class="triangle"><p>Resize</p></div>
 
 	</div><!--container div close-->
 </body>

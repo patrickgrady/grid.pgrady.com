@@ -1,105 +1,142 @@
 /*
 
-The Flexible Grid Foundation 
+The pgrady Grid v2.0
 By Patrick Grady                                                             
 www.pgrady.com   
 
 */
 
 	
-/*////////////////////////////////////////////// global styles //////////////////////////////////////////*/
+/*///////////////////////////////////////////////// global styles ///////////////////////////////////////////////*/
 
-#container {
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  	}
+  
+.container {
 	width: 99.99999%;
 	margin: 0 auto;
 	}
 
 .wrapper {
 	margin: 0 auto;
-	padding: .5em;
+	padding: .75em;
 	}
 	
 
-/*////////////////////////////////////////  sets column widths  ////////////////////////////////////////*/
+/*////////////////////////////////////////  sets initial column widths  ////////////////////////////////////////*/
 
-div[class$="col"] {
-	padding: 1em;
+div[class^="span"] {
+	padding: .75em;
 	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-    }
+	}
 
-.onecol {
+.span12 {
 	width: 100%;
 	}
 
-.twocol {
+.span 11 {
+	width: 91.66%;
+	}
+
+.span 10 {
+	width: 83.33%;
+	}
+			
+.span9 {
+	width: 75%;
+	}
+
+.span8 {
+	width: 66.66%;
+	}
+
+.span 7 {
+	width: 58.33%;
+	}
+		
+.span6 {
 	width: 50%;
 	}
 
-.threecol {
+.span 5 {
+	width: 41.66%;
+	}
+	
+.span4 {
 	width: 33.33%;
 	}
 	
-.fourcol {
+.span3 {
 	width: 25%;
 	}
 
-.sixcol {
+.span2 {
 	width: 16.66%;
 	}
 
-.eightcol {
-	width: 12.5%;
+.span1 {
+	width: 8.33%;
 	}
-
 		
-/*/////////////////////////////////////////  widescreen  /////////////////////////////////////////*/
+/*///////////////////////////////////////////////  widescreen  ////////////////////////////////////////////////*/
 
 @media (min-width:801px) {
 	
-#container {
+.container {
 	max-width: 1120px;
 	}
 			
 	}/*widescreen close*/
 	
-/*///////////////////////////////////////////  tablet  ///////////////////////////////////////////*/
+/*/////////////////////////////////////////////////  tablet  //////////////////////////////////////////////////*/
 
 @media (max-width:800px) {
 
 body {
-	min-width: 601px;
+	min-width: 551px;
 	}
 
-#container  {
+.container  {
+	width: 100%;
+	}
+
+.span9 {
 	width: 100%;
 	}
 	
-.fourcol, .sixcol, .eightcol {
+.span3 {
 	width: 50%;
+	}	
+		 
+.span2 {
+	width: 33.33%;
 	}
-		
 
+.span1 {
+	width: 16.66%;
+	}
+	
 	}/*tablet close*/
 	
-/*/////////////////////////////////////////  mobile  /////////////////////////////////////////*/
+/*/////////////////////////////////////////////////  mobile  ///////////////////////////////////////////////////*/
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 
 body {
-	min-width: 300px;
+	min-width: 0;
 	}
 	
-#container  {
+.container  {
 	width: 100%;
 	}
 
-div[class$="col"] {
+div[class^="span"] {
 	width: 100%;
 	}
-		
+			
 	}/*mobile close*/

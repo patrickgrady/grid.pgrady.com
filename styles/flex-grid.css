@@ -1,6 +1,6 @@
 /*
 
-The pgrady Grid v2.0
+The pgrady Grid v2.1
 By Patrick Grady                                                             
 www.pgrady.com   
 
@@ -39,11 +39,11 @@ div[class^="span"] {
 	width: 100%;
 	}
 
-.span 11 {
+.span11 {
 	width: 91.66%;
 	}
 
-.span 10 {
+.span10 {
 	width: 83.33%;
 	}
 			
@@ -55,7 +55,7 @@ div[class^="span"] {
 	width: 66.66%;
 	}
 
-.span 7 {
+.span7 {
 	width: 58.33%;
 	}
 		
@@ -63,7 +63,7 @@ div[class^="span"] {
 	width: 50%;
 	}
 
-.span 5 {
+.span5 {
 	width: 41.66%;
 	}
 	

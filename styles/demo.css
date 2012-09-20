@@ -6,8 +6,68 @@ www.pgrady.com
 
 */
 
-html, body {	background: #bbb; font-family: proxima-nova; -webkit-font-smoothing: antialiased; height: 100%; } .wrapper { background: #fff; } .footer { clear: both; } div[class^="span"] p { background: #ddd; margin: 0; } .wrapper p { font-size: 1em; padding: .5em; background: #ddd; font-weight: bold; } #resize { background: rgba(250, 200, 5, 0.75); position: fixed; bottom: 0; right: 0; padding: 0 1em; font-size: .75em; font-weight: bold; } #title { background: url(../imgs/pg_logo_sm.png) no-repeat; text-indent: 40px; margin-bottom: 1.5em; } #summary { background: transparent; font-weight: normal; padding: 0 0 1.5em 0; } a { font-size: .75em; font-weight: 600; text-decoration: none; color: #333; text-decoration: none; border-bottom: #fac905 solid 2px; -webkit-transition: all .25s ease-out; -moz-transition: all .25s ease-out; -o-transition: all .25s ease-out; transition: all .25s ease-out; } a:hover { background: #fac905; } 
+html, body, div, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  }
 
+body { 
+  line-height: 1.5em; 
+  font-size: 100%; 
+  background: #fff; 
+  color: #222; 
+  font-family: proxima-nova; 
+  -webkit-font-smoothing: antialiased; 
+  height: 100%; 
+  }
+
+.wrapper { 
+  background: #fff; 
+  }
+
+.footer { 
+  clear: both; 
+  } 
+
+*[class^="span"] p { 
+  background: #ddd; 
+  margin: 0; 
+  }
+
+.wrapper p { 
+  font-size: 1em; 
+  padding: .5em; 
+  background: #ddd; 
+  font-weight: bold; 
+  }
+
+#resize { 
+  background: rgba(250, 200, 5, 0.75); 
+  position: fixed; 
+  bottom: 0; 
+  right: 0; 
+  padding: 0 1em; 
+  font-size: .75em; 
+  font-weight: bold; 
+  } 
+
+#title { 
+  background: url(../imgs/pg_logo_sm.png) no-repeat; 
+  text-indent: 40px; 
+  margin-bottom: 1.5em;
+  float: left;
+  }
+
+#summary { 
+  background: transparent; 
+  font-weight: normal; 
+  padding: 0 0 1.5em 0;
+  clear: both;
+  padding-top: 1.5em; 
+  } 
 
 .triangle {
   border-color: transparent transparent transparent rgba(250, 200, 5, 0.75);
@@ -23,7 +83,7 @@ html, body {	background: #bbb; font-family: proxima-nova; -webkit-font-smoothing
   position: fixed; 
   bottom: -75px; 
   right: -75px;
-}
+  }
 
 .triangle p {
   font-size: .75em; 
@@ -48,9 +108,10 @@ html, body {	background: #bbb; font-family: proxima-nova; -webkit-font-smoothing
 	50% {background: hsl(48, 96%, 28%);}
 	100% {background-color: hsl(48, 96%, 50%);}
 	}
-	  
-.site-link a:link,
-.site-link a:visited {
+
+.site-link:link,
+.site-link:visited {
+  text-decoration: none;
 	cursor: pointer;
 	font-size: .75em;
 	font-weight: 600;
@@ -65,10 +126,23 @@ html, body {	background: #bbb; font-family: proxima-nova; -webkit-font-smoothing
 	-moz-transition: all .25s ease-out;
 	-o-transition: all .25s ease-out;
 	transition: all .25s ease-out;
+  float: right;
 	}
 
-.site-link a:link:hover {
+.site-link:link:hover {
 	-webkit-animation: pulse 2.25s ease-out;
 	-webkit-animation-iteration-count: infinite;
 	background: hsl(48, 96%, 28%);
 	}
+
+@media (max-width: 400px) {
+
+.site-link:link {
+  clear: left;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+}

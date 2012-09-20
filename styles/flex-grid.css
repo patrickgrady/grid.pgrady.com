@@ -1,24 +1,26 @@
 /*
 
-The pgrady Grid v2.1
+The pgrady Grid v2.2
 By Patrick Grady                                                             
 www.pgrady.com   
 
 */
 
 	
-/*///////////////////////////////////////////////// global styles ///////////////////////////////////////////////*/
+/*///////////////////////////////////////////////// initial styles ///////////////////////////////////////////////*/
 
-* {
+.container,
+.wrapper,
+*[class^="span"] {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  	}
+ }
   
 .container {
-	width: 99.99999%;
+	width: 100%;
 	margin: 0 auto;
 	}
 
@@ -27,13 +29,12 @@ www.pgrady.com
 	padding: .75em;
 	}
 	
-
-/*////////////////////////////////////////  sets initial column widths  ////////////////////////////////////////*/
-
-div[class^="span"] {
+*[class^="span"] {
 	padding: .75em;
 	float: left;
 	}
+
+/*/////////////////////////////////////////////  sets column widths  //////////////////////////////////////////////*/
 
 .span12 {
 	width: 100%;
@@ -88,7 +89,7 @@ div[class^="span"] {
 @media (min-width:801px) {
 	
 .container {
-	max-width: 1120px;
+	max-width: 1440px;
 	}
 			
 	}/*widescreen close*/
@@ -98,7 +99,7 @@ div[class^="span"] {
 @media (max-width:800px) {
 
 body {
-	min-width: 551px;
+	min-width: 541px;
 	}
 
 .container  {
@@ -123,19 +124,19 @@ body {
 	
 	}/*tablet close*/
 	
-/*/////////////////////////////////////////////////  mobile  ///////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////  mobile  //////////////////////////////////////////////////*/
 
-@media (max-width: 550px) {
+@media (max-width: 540px) {
 
 body {
 	min-width: 0;
 	}
 	
-.container  {
+.container {
 	width: 100%;
 	}
 
-div[class^="span"] {
+*[class^="span"] {
 	width: 100%;
 	}
 			

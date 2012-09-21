@@ -28,6 +28,11 @@ body {
   background: #fff; 
   }
 
+a:link,
+a:visited {
+  color: inherit;
+  }
+  
 .footer { 
   clear: both; 
   } 
